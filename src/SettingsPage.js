@@ -1,7 +1,7 @@
 import React from 'react';
 import { Page } from 'react-onsenui';
 
-const SettingsPage = () => {
+const SettingsPage = props => {
   return (
     <Page>
       <h1>Settings</h1>

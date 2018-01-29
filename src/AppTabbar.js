@@ -38,5 +38,5 @@ const AppTabbar = props => {
 };
 
 export default compose(
-  connect(({ tabReducer: loginPage }) => (loginPage))
+  connect(({ tabReducer: loginPage }) => loginPage)
 )(AppTabbar);
