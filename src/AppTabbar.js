@@ -1,6 +1,5 @@
 import React from 'react';
 import { Page, Tabbar, Tab } from 'react-onsenui';
-import { compose } from 'redux';
 import { connect } from 'react-redux';
 
 import HomePage from './HomePage';
@@ -37,6 +36,4 @@ const AppTabbar = props => {
   );
 };
 
-export default compose(
-  connect(({ tabReducer: loginPage }) => loginPage)
-)(AppTabbar);
+export default connect(({ tabReducer: loginPage }) => loginPage)(AppTabbar);
